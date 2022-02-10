@@ -21,6 +21,9 @@ let package = Package(
             exclude: [
                 "Info.plist",
                 "FlagKitFramework.xcconfig"
+            ],
+            resources: [
+                .process("FlagKit.xcassets")
             ]
         ),
         .testTarget(
